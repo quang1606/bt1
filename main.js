@@ -64,6 +64,6 @@ function getCountElement(arr) {
       tanSuatMap.set(chuoi, (tanSuatMap.get(chuoi) || 0) + 1);
     });
   
-    return tanSuatMap;
+    return Object.fromEntries(tanSuatMap)
   }
 console.log(getCountElement(["one", "two", "three", "one", "one", "three"]))
